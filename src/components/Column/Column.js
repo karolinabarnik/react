@@ -1,7 +1,9 @@
 
 
 const Column = props => (
-    <div className={styles.component}>
-      <h3 className={styles.title}>{props.titleText}</h3>
-    </div>
+    <section className={styles.component}>
+      <h3 className={styles.title}></h3>
+    </section>
   );
+
+  export default Column;
