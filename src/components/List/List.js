@@ -32,13 +32,14 @@ class List extends React.Component {
       columns: [
               ...state.columns,
               {
-                key: state.columns.length ? state.columns[state.columns.length
+                key: state.columns.length ? state.columns[state.columns.length-1]:
                 title,
                 icon: 'list-alt',
                 cards: []
       } ]
       } ));
       }
+    
 
     render() {
         const {title, image, description, columns, addColumn} = this.props;
