@@ -14,6 +14,7 @@ class App extends React.Component {
       </main>
     );
   }
+  static PropTypes ={
   title: PropTypes.node,
   subtitle: PropTypes.node,
   }
