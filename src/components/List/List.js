@@ -1,71 +1,71 @@
 import React from 'react';
 import styles from './List.scss';
-import App from '../App/App.js';
 import Hero from '../Hero/Hero.js';
 import PropTypes from 'prop-types';
-import columnStyles from '../Column/Column.scss'
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
+import Column from '../Column/Column.js';
 
 
 class List extends React.Component {
     state = {
-        columns: this.props.columns || [],
-      }
+      columns: this.props.columns || [],
+    }
 
     static propTypes = {
-        title: PropTypes.node.isRequired,
-        description: PropTypes.node,
-        columns: PropTypes.array,
-        image: PropTypes.node,
-        addColumn: PropTypes.func,
-      }
+      title: PropTypes.node.isRequired,
+      description: PropTypes.node,
+      columns: PropTypes.array,
+      image: PropTypes.node,
+      addColumn: PropTypes.func,
+      sourceImg: PropTypes.node,
+    }
 
     static defaultProps = {
-        description: settings.defaultListDescription,
+      description: settings.defaultListDescription,
     }  
 
     addColumn(title){
-        this.setState(state => (
-      {
-      columns: [
-              ...state.columns,
-              {
-                key: state.columns.length ? state.columns[state.columns.length-1]:
+      this.setState(state => (
+        {
+          columns: [
+            ...state.columns,
+            {
+              key: state.columns.length ? state.columns[state.columns.length-1]:
                 title,
-                icon: 'list-alt',
-                cards: []
-      } ]
-      } ));
-      }
+              icon: 'list-alt',
+              cards: [],
+            } ],
+        } ));
+    }
     
 
     render() {
-        const {title, image, description, columns, addColumn} = this.props;
+      const {columns, addColumn} = this.props;
 
-        return (
-            <section className={styles.component}>
+      return (
+        <section className={styles.component}>
             
-            <Hero titleText={this.props.title}
+          <Hero titleText={this.props.title}
             imageHero={this.props.sourceImg} />
-                <div className={styles.description}>
-                    {ReactHtmlParser(this.props.description)}
-                </div>
+          <div className={styles.description}>
+            {ReactHtmlParser(this.props.description)}
+          </div>
             
-            <div className={styles.columns}>
+          <div className={styles.columns}>
             {columns.map(columnData => (
-            <   Column key={columnData.id} {...columnData} />
+              <Column key={columnData.id} {...columnData} />
             ))}
-            </div>
+          </div>
 
-            <div className={styles.creator}>
+          <div className={styles.creator}>
             <Creator text={settings.columnCreatorText} action={addColumn}/>
-            </div>
+          </div>
 
-            </section>
-    );
-  }
+        </section>
+      );
+    }
 }
 
 export default List;
