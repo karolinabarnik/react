@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-import Card from '../Card/Card';
+//import Card from '../Card/Card';
 import { settings } from '../../data/dataStore';
-import Creator from '../Creator/Creator';
+//import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
 
 class Column extends React.Component {
@@ -26,7 +26,7 @@ class Column extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>{title}<span className={styles.icon}><Icon name={icon}></Icon></span></h3>
 
-        <div className={styles.cards}>
+        {/*<div className={styles.cards}>
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
           ))}
@@ -35,6 +35,7 @@ class Column extends React.Component {
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={addCard}/>
         </div>
+          */}
       </section>
     );
   }
