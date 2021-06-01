@@ -7,7 +7,6 @@ import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 import Column from '../Column/ColumnContainer.js';
 
-
 class List extends React.Component {
     static propTypes = {
       title: PropTypes.node.isRequired,
@@ -37,7 +36,6 @@ class List extends React.Component {
           <div className={styles.columns}>
           {columns.map(columnData => (
           <Column key={columnData.id} {...columnData} />
-          ))}
           ))}
           </div>
 
