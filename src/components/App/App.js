@@ -8,10 +8,12 @@ class App extends React.Component {
   render() {
     return (
       <main className={styles.component}>
+        <Search/>
         <h1 className={styles.title}>{this.props.title}</h1>
         <h2 className={styles.subtitle}>{this.props.subtitle}</h2>
         {this.props.lists.map(list => <List key={list.id} {...list} />)}
       </main>
+       
     );
   }
 
