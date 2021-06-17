@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import App from './App'; //<App />
+import Home from './Home'; //<Home />
 
 const mapStateToProps = state => ({
   title: state.app.title,
@@ -7,4 +7,4 @@ const mapStateToProps = state => ({
   lists: state.lists
 });
 
-export default connect(mapStateToProps)(App); //<App title={'My first React app'} subtitle={'tretretret'} lists={[...]}/>
+export default connect(mapStateToProps)(Home); //<Home title={'My first React app'} subtitle={'tretretret'} lists={[...]}/>
