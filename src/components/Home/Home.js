@@ -9,7 +9,6 @@ class Home extends React.Component {
     const {title, subtitle, lists} = this.props;
     return (
       <main className={styles.component}>
-        <Search/>
         <h1 className={styles.title}>{this.props.title}</h1>
         <h2 className={styles.subtitle}>{this.props.subtitle}</h2>
         
