@@ -28,7 +28,7 @@ class Column extends React.Component {
 
         <div className={styles.cards}>
           {cards.map(cardData => (
-          <Card key={cardData.id} {...cardData} />
+            <Card key={cardData.id} {...cardData} />
           ))}
         </div>
 

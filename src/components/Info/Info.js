@@ -5,11 +5,9 @@ import { infoData } from '../../data/dataStore';
 
 const Info = () => (
   <Container>
-    <h2><Hero titleText={infoData.title} image={infoData.image}/>Info</h2>
+    <h2><Hero titleText={infoData.title} imageImg={infoData.image}/>Info</h2>
     <p>{infoData.description}</p>
   </Container>
 );
-
-
 
 export default Info;

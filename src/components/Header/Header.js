@@ -1,30 +1,32 @@
 import React from 'react';
-import {NavLink, Link} from 'react-router-dom';
 import styles from './Header.scss';
+import {NavLink, Link} from 'react-router-dom';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import Search from '../Search/SearchContainer';
 
 class Header extends React.Component {
-  render(){
+   
+  render() {
+  
     return (
       <header className={styles.component}>
         <Container>
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
-              <Icon name='cat' />
+              <Icon name='cat'></Icon>
             </Link>
-            <Search/>
+            <Search />
             <nav>
-                <NavLink exact to='/' activeClassName='active'>Home</NavLink>   
-                <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
-                <NavLink exact to='/FAQ' activeClassName='active'>FAQ</NavLink>
+              <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+              <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
+              <NavLink exact to='/FAQ' activeClassName='active'>FAQ</NavLink>
             </nav>
           </div>
-        </Container>
+        </Container>      
       </header>
     );
   }
 }
-
+      
 export default Header;

@@ -161,14 +161,14 @@ const initialStoreData = {
 };
 
 export const infoData = {
-  title: 'Information',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  title: 'All the most important information',
+  description: 'Donec ut ante at augue egestas volutpat nec vel velit. Nulla fringilla, quam sed porttitor posuere, velit ipsum malesuada sapien, vel pulvinar nisl enim non odio. Integer non erat in justo mattis gravida. Sed non ultrices nisi. In nec risus sagittis, auctor velit vitae, dapibus metus. Quisque tincidunt tortor felis, sit amet tempus lectus vulputate nec. Etiam id tincidunt dui, ac varius lorem. Maecenas eget condimentum eros. Fusce facilisis sem non turpis faucibus dignissim. Etiam fermentum, massa quis feugiat molestie, sapien enim rhoncus nisi, vel suscipit est nulla eu nisl. Vivamus id purus ac nisi sagittis volutpat et nec nulla.',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export const faqData = {
-  title: 'FAQ',
-  description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  title: 'Frequently asked questions',
+  description: 'In eleifend, lectus nec porttitor ultrices, dui sapien eleifend mi, quis blandit felis augue ac quam. Sed id ligula tempor, ultrices nibh sed, fringilla elit. Mauris pellentesque id ligula vel egestas. Phasellus ultrices commodo ipsum id sagittis. Aenean massa libero, tincidunt ac blandit vitae, convallis ac purus. Proin leo ex, vestibulum ut vulputate vel, tempor quis ex. Ut pulvinar, lorem eget tristique tincidunt, sapien odio eleifend velit, ac tincidunt mauris metus ut justo. Curabitur massa elit, ullamcorper eget vulputate non, pellentesque at enim.',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
